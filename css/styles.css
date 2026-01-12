@@ -164,8 +164,8 @@ ul {
 /* Header */
 .site-header {
   padding: 2rem 3rem 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: flex-start;
 }
 
@@ -177,6 +177,7 @@ ul {
 .header-location {
   font-family: var(--font-primary);
   font-size: 20px;
+  text-align: right;
 }
 
 .header-title {
