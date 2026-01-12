@@ -76,10 +76,15 @@
   <script>
     const form = document.getElementById('rsvp-form');
     const successMessage = document.getElementById('form-success');
+    const submitButton = form.querySelector('button[type="submit"]');
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const data = new FormData(form);
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Submitting...';
+      submitButton.classList.add('loading');
 
       try {
         const response = await fetch(form.action, {
@@ -93,9 +98,15 @@
           successMessage.style.display = 'block';
         } else {
           alert('Oops! There was a problem submitting your RSVP. Please try again.');
+          submitButton.disabled = false;
+          submitButton.textContent = 'Submit RSVP';
+          submitButton.classList.remove('loading');
         }
       } catch (error) {
         alert('Oops! There was a problem submitting your RSVP. Please try again.');
+        submitButton.disabled = false;
+        submitButton.textContent = 'Submit RSVP';
+        submitButton.classList.remove('loading');
       }
     });
   </script>

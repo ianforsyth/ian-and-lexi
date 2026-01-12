@@ -405,6 +405,15 @@ ul {
   opacity: 0.85;
 }
 
+.form-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-button.loading {
+  opacity: 0.6;
+}
+
 /* Form Success Message */
 .form-success {
   text-align: center;
