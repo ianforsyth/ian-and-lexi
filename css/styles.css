@@ -405,6 +405,25 @@ ul {
   opacity: 0.85;
 }
 
+/* Form Success Message */
+.form-success {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.success-title {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  font-family: var(--font-primary);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
 /* ================================
    MOBILE STYLES
    ================================ */
