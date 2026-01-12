@@ -551,9 +551,18 @@ ul {
   /* Header adjustments */
   .site-header {
     padding: 1.5rem 1.5rem 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 0.5rem;
+  }
+
+  .header-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    order: -1;
+    margin-bottom: 0.25rem;
   }
 
   .header-date,
@@ -561,9 +570,9 @@ ul {
     font-size: 0.8rem;
   }
 
-  .header-title {
-    font-size: 1.5rem;
-    order: -1;
+  .header-date::after {
+    content: ' • ';
+    margin-left: 0.5rem;
   }
 
   /* Mobile nav */
