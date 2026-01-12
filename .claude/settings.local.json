@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(while read f)",
+      "Bash(do echo \"File: $f\")",
+      "Bash(done)"
+    ]
+  }
+}

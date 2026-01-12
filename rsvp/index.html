@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP | Ian & Lexi</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <span class="header-date">June 06, 2026</span>
+      <a href="/" class="header-title">Lexi & Ian</a>
+      <span class="header-location">Durango, Colorado</span>
+    </header>
+
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li><a href="/festivities/" class="nav-link">Weekend Festivites</a></li>
+        <li><a href="/travel/" class="nav-link">Travel & Hotels</a></li>
+        <li><a href="/things/" class="nav-link">Things To Do</a></li>
+        <li><a href="/rsvp/" class="nav-link active">RSVP</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="content-container">
+        <h1 class="section-title">RSVP</h1>
+
+        <form class="rsvp-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Will you be attending? *</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="attendance" value="yes" class="radio-input" required>
+                Yes
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="attendance" value="no" class="radio-input">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dietary" class="form-label">Dietary Restrictions</label>
+            <input type="text" id="dietary" name="dietary" class="form-input" placeholder="e.g., vegetarian, gluten-free, allergies">
+          </div>
+
+          <button type="submit" class="form-button">Submit RSVP</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
