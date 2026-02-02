@@ -1,5 +1,11 @@
-# Ian And Lexi
+# Ian & Lexi
 
-## Launching Locally
+## Getting started
 
-`python3 -m http.server 8000`
+To start the site locally, run:
+
+```
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000 in your browser.
